@@ -1,0 +1,55 @@
+/* projects */
+
+.projects {
+  padding-bottom: 94px;
+}
+
+.projects__titel,
+.team__titel-section,
+.clients__titel {
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin-bottom: 50px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  position: relative;
+
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.projects__description {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

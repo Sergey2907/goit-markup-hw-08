@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $main-fon-color;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+.container {
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}

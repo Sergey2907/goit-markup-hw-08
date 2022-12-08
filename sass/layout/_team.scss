@@ -1,0 +1,90 @@
+/* team */
+
+.team {
+  background-color: #f5f4fa;
+
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.team__img {
+  height: auto;
+}
+
+.team__text {
+  width: 270px;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__titel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $primary-color;
+
+  margin-bottom: 10px;
+}
+
+.team__description {
+  line-height: 1.18;
+  color: $secondary-color;
+  margin-bottom: 16px;
+}
+
+/* соц-мережі наша команда */
+/* net-list */
+
+.team__net-list {
+  display: flex;
+  justify-content: center;
+}
+
+.net-item {
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.net-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  font-size: 0px;
+  padding: 0;
+  border-radius: 50%;
+  fill: $icon-color;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $main-fon-color;
+    background-color: $accent-color;
+  }
+}

@@ -1,0 +1,31 @@
+/* footer соц-мережі */
+
+.footer-icons__titel {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.footer-icons__list {
+  display: flex;
+}
+
+.footer-icons__item {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.footer-icons__link:focus {
+  background-color: $accent-color;
+}
+
+.footer__icon {
+  fill: #ffffff;
+}

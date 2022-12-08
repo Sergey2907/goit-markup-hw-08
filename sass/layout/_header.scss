@@ -1,0 +1,127 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+}
+
+/* Логотип */
+
+.site-nav__logo {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.site-nav__text {
+  color: $accent-color;
+}
+
+/* навигация */
+.site-nav {
+  display: flex;
+  padding-left: 15px;
+}
+
+.site-nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav__link {
+  position: relative;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-color);
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.current::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+
+    border-radius: 2px;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Підкреслення */
+
+/* контакти хедер */
+
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.site-contacts__item + .site-contacts__item {
+  margin-left: 50px;
+}
+
+.current {
+  color: $accent-color;
+}
+
+.site-contacts__link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $secondary-color;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-contacts__icon {
+  align-self: center;
+  margin-right: 10px;
+  fill: $secondary-color;
+  stroke: currentColor;
+}
+
+.site-contacts__icon-mail {
+  width: 16px;
+  height: 12px;
+}
+.site-contacts__icon-tel {
+  width: 10px;
+  height: 16px;
+}
