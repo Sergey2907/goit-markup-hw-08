@@ -8,16 +8,19 @@
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .team__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  // width: calc((100% - 90px) / 4);
+  // margin-right: 30px;
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
   }
 }
 

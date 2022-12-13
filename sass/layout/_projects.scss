@@ -2,12 +2,16 @@
 
 .projects {
   padding-bottom: 94px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .projects__titel,
 .team__titel-section,
 .clients__titel {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 1197px) {
     font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
