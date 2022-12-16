@@ -37,6 +37,10 @@ html {
           box-sizing: border-box;
 }
 
+.decoration {
+  text-decoration: none;
+}
+
 h2,
 h3,
 p {
@@ -147,7 +151,7 @@ body {
   display: flex;
   margin-left: 93px;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .site-nav__list {
     display: none;
   }
