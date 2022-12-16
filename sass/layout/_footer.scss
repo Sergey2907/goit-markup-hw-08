@@ -10,6 +10,10 @@
 .footer__container {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__wrapper {

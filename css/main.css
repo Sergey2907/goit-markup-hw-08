@@ -842,6 +842,12 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (max-width: 767px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .footer__wrapper {
   margin-right: 70px;
@@ -884,6 +890,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+@media screen and (max-width: 767.98px) {
+  .form-footer__subscription {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 /* div label+input */
