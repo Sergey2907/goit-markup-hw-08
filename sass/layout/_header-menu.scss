@@ -104,7 +104,8 @@
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
-  .head__menu {
+  .head__menu,
+  .head__backdrop {
     display: none;
   }
 }

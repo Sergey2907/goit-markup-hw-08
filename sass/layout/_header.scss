@@ -87,7 +87,7 @@
   padding-right: 15px;
   align-items: center;
 
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -160,6 +160,7 @@
     display: inline-block;
     border-color: transparent;
     background-color: white;
+    margin-left: 100%;
 
     fill: black;
   }
