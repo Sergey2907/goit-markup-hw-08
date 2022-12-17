@@ -16,7 +16,13 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #000000;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
 }
 
 .site-nav__text {
@@ -26,7 +32,6 @@
 /* навигация */
 .site-nav {
   display: flex;
-  padding-left: 15px;
 }
 
 .site-nav__list {
@@ -35,6 +40,10 @@
 
   @media screen and (max-width: 767.98px) {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
   }
 }
 
@@ -74,7 +83,9 @@
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 40px;
+  @media screen and (max-width: 1199.98px) {
+    margin-right: 50px;
+  }
 }
 
 /* Підкреслення */
@@ -89,6 +100,10 @@
 
   @media screen and (max-width: 767.98px) {
     display: none;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    flex-direction: column;
   }
 }
 
@@ -142,7 +157,13 @@
     display: none;
   }
   .site-nav {
+    display: flex;
+    width: 450px;
+    padding-bottom: 16px;
+    padding-top: 16px;
     justify-content: space-between;
+
+    align-items: center;
   }
 }
 .site-nav {
@@ -160,7 +181,6 @@
     display: inline-block;
     border-color: transparent;
     background-color: white;
-    margin-left: 100%;
 
     fill: black;
   }

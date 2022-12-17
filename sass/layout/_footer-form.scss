@@ -2,6 +2,7 @@
 /* форма-футер */
 .form-footer {
   margin-left: auto;
+  margin-right: auto;
 }
 /* форма підписки */
 .form-footer__subscription {
@@ -9,7 +10,7 @@
   align-items: end;
 
   @media screen and (max-width: 767.98px) {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -17,7 +18,10 @@
 .form-footer__form-field {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+  }
 }
 
 /* імейл */
@@ -26,11 +30,21 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
+  letter-spacing: 0.03em;
 
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 /* form-input */
@@ -44,6 +58,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline-color: $accent-color;
+
+  @media screen and (max-width: 767.98px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 
   &::placeholder {
     line-height: 1.25;
@@ -66,6 +85,11 @@
   justify-content: center;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* icon-telegram */
