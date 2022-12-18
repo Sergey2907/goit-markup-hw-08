@@ -1,15 +1,59 @@
 /* заголовок */
 .hiro {
-  width: 1600px;
+  max-width: 480px; //розміри моб
+  padding-top: 118px; //відступи моб
+  padding-bottom: 118px;
   margin: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // width: 1600px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
 
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hiro.jpg);
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+  //  rgba(47, 48, 58, 0.4)),
+  //   url(../images/hiro.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    //моб розміри
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/service/img_480.jpg); // малюнок 480px
+    @media screen and (min-device-pixel-ratio: 2),
+      //Перевірка на ratio екран (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/service/img_960.jpg); //Якщо так, скачує 960px
+    }
+  }
+  @media screen and (min-width: 768px) {
+    //планшет розміри
+    max-width: 768px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/service/img_768.jpg); // малюнок 768px
+    @media screen and (min-device-pixel-ratio: 2),
+      //Перевірка на ratio екран (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/service/img_1536.jpg); //Якщо так, скачує 1536px
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    //комп'ютер розміри
+    max-width: 1600px;
+    padding-top: 200px; //відступи на комп'ютер версії
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/service/img_1600.jpg); // малюнок 1600px
+    @media screen and (min-device-pixel-ratio: 2),
+      //Перевірка на ratio екран (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/service/img_3200.jpg); //Якщо так, скачує 3200px
+    }
+  }
 }
 
 .hiro__titel {

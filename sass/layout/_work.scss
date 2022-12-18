@@ -2,17 +2,17 @@
 /* work-list */
 
 .filter__work-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-wrap: wrap;
     display: flex;
     gap: 30px;
   }
-}
 
-// @media screen and (min-width: 1200px) {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
 
 /* work-item */
 
@@ -51,6 +51,7 @@
   line-height: 2;
   color: $primary-color;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .filter__work-description {
@@ -64,6 +65,14 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.filter__work-link {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .filter__work-link:hover .filter__description {
@@ -122,8 +131,8 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
 
-.filter__work-titel {
-  margin-bottom: 4px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-grow: 1;
+  }
 }
