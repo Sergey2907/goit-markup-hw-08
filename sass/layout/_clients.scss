@@ -57,7 +57,8 @@
 
 .clients__item {
   @media screen and (max-width: 767px) {
-    width: 210px;
+    max-width: 210px;
+    width: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 768px) {
@@ -111,7 +112,6 @@
 // }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   color: $icon-color;
   border: 1px solid #afb1b8;
@@ -132,7 +132,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    width: 210px;
+    max-width: 210px;
   }
 
   @media screen and (min-width: 768px) {

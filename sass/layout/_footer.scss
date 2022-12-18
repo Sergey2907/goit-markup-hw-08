@@ -12,11 +12,15 @@
 }
 
 .footer__container {
-  display: flex;
   align-items: baseline;
 
   @media screen and (max-width: 767.98px) {
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -63,6 +67,12 @@
   @media screen and (max-width: 767.98px) {
     display: flex;
     justify-content: center;
+  }
+}
+
+.address-list__item:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 12px;
   }
 }
 
