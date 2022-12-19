@@ -1089,7 +1089,11 @@ body {
 /* форма-футер */
 .form-footer {
   margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (max-width: 1199.98px) {
+  .form-footer {
+    margin-right: auto;
+  }
 }
 
 /* форма підписки */

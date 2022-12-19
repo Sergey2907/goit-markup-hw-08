@@ -9,23 +9,13 @@
 }
 
 .benefits__item {
-  // width: calc((100% - 90px) / 4);
-  // margin-right: 30px;
-
   @media screen and (min-width: 768px) {
     width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
-    // margin-right: 30px;
   }
-}
-
-.benefits__item:nth-child(4n) {
-  // @media screen and (min-width: 1200px) {
-  //   margin-right: 0;
-  // }
 }
 
 .benefits__titel {

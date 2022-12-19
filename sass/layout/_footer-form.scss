@@ -2,7 +2,9 @@
 /* форма-футер */
 .form-footer {
   margin-left: auto;
-  margin-right: auto;
+  @media screen and (max-width: 1199.98px) {
+    margin-right: auto;
+  }
 }
 /* форма підписки */
 .form-footer__subscription {
